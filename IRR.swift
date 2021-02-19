@@ -1,5 +1,3 @@
-import Foundation
-
 /// An implementation of a Newton-Raphson optimization algorithm to calculate an internal rate of return at a minimum precision of 1e-7 using a maximum of 25 iterations
 func xirr(presentValue: Double, cashFlows: [(pmt: Double, t: Double)], irrStartingGuess: Double) -> Double? {
     let maxIterations: Int = 25
